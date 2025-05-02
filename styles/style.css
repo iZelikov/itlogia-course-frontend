@@ -35,6 +35,14 @@ body {
     background-color: #A8AE16;
 }
 
+.button.white-button {
+    background-color: #ffffff;
+}
+
+.button.white-button:hover {
+    background-color: #F8FF23;
+}
+
 .main {
     overflow: hidden;
     position: relative;
@@ -130,4 +138,194 @@ body {
     top: 78px;
     right: -578px;
     z-index: -1;
+}
+
+.cars {
+    background-color: #000000;
+    padding: 130px 0;
+}
+
+.cars h2 {
+    font-size: 65px;
+    font-weight: normal;
+}
+
+.cars-content {
+    display: flex;
+    padding-top: 60px;
+}
+
+.cars-filter {
+    margin-right: 77px;
+}
+
+.cars-filter ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    list-style: none;
+}
+
+.cars-filter ul li {
+    width: 127px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid white;
+    font-size: 16px;
+    color: #ffffff;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+}
+
+.cars-filter ul li.active,
+.cars-filter ul li:hover {
+    color:#F8FF23;
+    border-color: #F8FF23;
+}
+
+.cars-items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.car {
+    background-color: #212121;
+    padding: 20px;
+    display: flex;
+}
+
+.car img {
+    max-width: 568px;;
+}
+
+.car-details {
+    margin-left: 24px;
+    display:flex;
+    flex-direction: column;
+}
+
+.car-details h4 {
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
+.car-details p {
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: normal;
+    color: #d4d4d4;
+    height: 100px;
+}
+
+.car-action {
+    margin-top: auto;
+}
+
+.car-action ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.car-period {
+    font-size: 16px;
+    line-height: 120%;
+    color:#d4d4d4;
+    margin-bottom: 5px;
+}
+
+.car-price {
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.car-price span {
+    font-size: 16px;
+    line-height: 120%;
+    color: #d4d4d4;
+}
+
+.car-action .button {
+    width: 100%;
+}
+
+.order {
+    padding-top: 150px;
+    padding-bottom: 130px;
+}
+
+.order .container {
+    position: relative;
+}
+
+.order img {
+    position: absolute;
+    top: -20px;
+    left: -530px;
+}
+
+.order form {
+    margin-left: 714px;
+    max-width: 468px;
+
+}
+
+.order h3 {
+    font-size: 65px;
+    font-weight: normal;
+    line-height: 100%;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.order p {
+    font-size: 24px;
+    line-height: 120%;
+    color: #d4d4d4;
+    margin-bottom: 60px;
+    max-width: 445px;
+}
+
+.order-form {
+    width: 344px;
+}
+
+::placeholder {
+    color: #d4d4d4;
+}
+
+.order-form input {
+    width: 100%;
+    height: 68px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 24px 20px;
+    margin-bottom: 15px;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.footer {
+    padding: 47px 0;
+    border-top: 1px solid #5f5f5f ;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rights {
+    font-size: 14px;
+    line-height: 90%;
+    letter-spacing: normal;
+    font-weight: bold;
+    text-transform: uppercase;
 }
