@@ -29,13 +29,6 @@ const carField = document.getElementById("car");
 const nameField = document.getElementById("name");
 const phoneField = document.getElementById("phone");
 
-function isValidPhoneNumber(phone) {
-    // Удаляем все символы, кроме цифр
-    const digits = phone.replace(/\D/g, '');
-    // Проверяем, что цифр минимум 10
-    return digits.length >= 10;
-  }
-
 document.getElementById("order-action").onclick = ()=> {
     const fields = [carField,nameField,phoneField];
     let hasError = false;
@@ -63,7 +56,18 @@ document.getElementById("order-action").onclick = ()=> {
     }
 }
 
-//Заполнение поля "Автомобиль" при нажатии на кнопку "Забронировать" в карточке
+// Домашнее задание
+// проверят, что телефонный номер содержит минимум 10 цифр (а не просто любых знаков)
+
+function isValidPhoneNumber(phone) {
+    // Удаляем все символы, кроме цифр
+    const digits = phone.replace(/\D/g, '');
+    // Проверяем, что цифр минимум 10
+    return digits.length >= 10;
+  }
+
+// Дополнительно  
+// Заполнение поля "Автомобиль" при нажатии на кнопку "Забронировать" в карточке
 
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.car .button.white-button');
